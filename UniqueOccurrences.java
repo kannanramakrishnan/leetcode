@@ -8,6 +8,7 @@ class UniqueOccurrences {
         }
 
         for(int x: freq.values()) {
+            if(s.contains(x)) return false;
             s.add(x);
         }
 
